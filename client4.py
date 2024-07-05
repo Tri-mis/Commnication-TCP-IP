@@ -75,7 +75,10 @@ class ClientObject:
             case 'f':
                 self.send_freq = self.struct_data.number
             case 's':
-                self.stream_flag = 1
+                if self.struct_data.head2 == 'o':
+                    self.stream_flag = 1
+                if self.struct_data.head2 == 'c':
+                    self.stream_flag = 0
 
         
 
