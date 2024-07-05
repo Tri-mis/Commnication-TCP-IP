@@ -7,7 +7,7 @@ import socket
 DEFAULT_DATA_LENGTH = 10
 FORMAT = 'utf-8'
 
-SERVER_IP = socket.gethostbyname(socket.gethostname())
+SERVER_IP = "192.168.1.8"
 SERVER_PORT = 5050
 SERVER_ADDR = (SERVER_IP, SERVER_PORT)
 
